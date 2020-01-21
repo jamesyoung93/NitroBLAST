@@ -1,0 +1,39 @@
+---
+title: "Untitled"
+author: "James Young"
+date: "January 15, 2020"
+output: html_document
+---
+
+### Input Options
+
+* **Query against** - This is the proteome of the organism you want to run the BLAST against. These organisms were picked for their high research productivity. Both the out group and the in group will be queried against this proteome.
+
+* **Out Group** - This is the group of proteomes that will be compared to the in group. This is the group that will be used to filter out non-unique proteins from the in group.
+
+* **In Group** - This is the group of proteomes that will be compared to the out group.This is the group that you are looking for unique proteins in.
+
+* **% Identity** - This is the percent of amino acids that each proteome within the in group has to have in common to a given protein in the "query against" proteome for that protein to survive filtering for the in group.
+
+* **E-value** - This is the "expect value", which can be further explained in other literature. A lower value will give more stringent results, a higher value will give less stringent results.
+
+* **Minimum Seq Length** - Coming soon.
+
+* **Maximum Seq Length** - Coming soon.
+
+### Output
+
+The output is in the form of a table which can be further filtered. The search bar will allow you to look for genes/proteins of interest within the table. The output can also be downloaded as a csv for use in further analysis outside of NitroBLAST. The output represents proteins that **ALL** proteomes in the "in group" had at least 1 protein with the "% identity" and "E-value" cutoffs met, while **NONE** of the "out group" proteomes had at at least 1 protein with the "% identity" and "E-value" cutoffs met.
+
+### An Example Work Flow
+
+A researcher is planning on interrogating the role of various proteins on nitrogen fixation in Nostoc sp. PCC 7120. The researcher wants to know what proteins all diazotrophic cyanobacteria have but non-diazotrophic cyanobacteria don't have. To achieve this goal, the researcher sets Nostoc sp. PCC 7120 as the "Query against option", Non-Diazotrophic Cyanobacteria as the "out group", and All Diazotrophic Cyanobacteria as the "in group". A normal minimum threshold for "% identity" would be between 40% and 50%, but the researcher wants to limit the results to the proteins with the most promise. To achieve this stringent filtering, the researcher sets the identity threshold at 70% and the "E-value" at 1e-100 then hits "Submit". The table is returned, representing the proteins of Nostoc sp. PCC 7120 that every proteome of the "in group" had at least 1 protein with atleast 70% identity with and an E-value below 1e-100 and none of the out group proteomes met the same criteria. Satisfied with the results the researcher downloads the csv file to save for further use. While this highly stringent filtering has narrowed down the highly conserved proteins that might play a role in nitrogen fixation, it didn't yield  a large amount of observations. Curious about a more systems level understanding, the researcher lowers the "% identity" to 40% and the "E-value" to 1e-50 and hits submit. Now there are many more results and the researcher goes to the Visualization tab and can view which functional groups are over represented in these proteins, look at a histogram of % identity distribution, and create venndiagrams which can then be saved by right clicking and choosing copy picture.
+
+
+
+
+
+
+
+
+

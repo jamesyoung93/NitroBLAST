@@ -1,0 +1,64 @@
+---
+title: "Untitled"
+author: "James Young"
+date: "January 15, 2020"
+output: html_document
+---
+
+
+
+
+### What Is NitroBLAST
+
+NitroBLAST aims to make the bioinformatic exploration of genes involved in nitrogen fixation both **accessible** and **reproducible**. With NitroBLAST, the user can compare BLAST results of various groups of diazotrophic and non-diazotrophic bacteria queried against representative organisms. These results can then be visualized within the app or downloaded as a csv for further analysis outside of the app. The vision for this app is that insights gathered through these bioinformatic analyses will inform thinking on nitrogenase activity and lead to testable hypotheses.  
+
+### Advantages of NitroBLAST
+
+NitroBLAST has many advantages over traditional BLAST methods when interrogating the proteomes of nitrogen-fixing bacteria, including:
+
+* **Reproducibility** - Reproducing your results are as easy as clicking the same settings you've previously used.
+
+* **Ease of Use**       - With a point and click interface, the user does not need to have experience                            coding in command line or repetitively use the NCBI website for whole                                  proteome comparisons.
+
+* **Speed**             - The BLAST queries have already been run and the results are held within the app. This leads to very fast response time within the app.
+
+* **Interactivity**     - With interactive parameters, the user can try various settings to see the                              difference in results. 
+
+* **Breadth**           - The use of multiple whole proteome comparisons between groups allows a higher confidence in the uniqueness of a given protein.
+
+* **Visualization**     - Make VennDiagrams, Histograms, and Gene Ontology Enrichment graphs within the app, a feature not available from BLAST.
+
+
+### Groupings
+All groups given below are diazotrophic except for the "Non-Diazotrophic" group, which can act as a control. These are the current groups but additions can be made.
+
+* **Non-Diazotrophic**  - Synechocystis sp. PCC 6803, Synechococcus 7942, Synechococcus WH8102, Synechococcus elongatus 2973, Arthrospira platensis
+
+* **Filamentous Heterocystous Cyanobacteria** - Nostoc sp. PCC 7120, Nostoc Punctiforme 29133, Leptolyngbya boryana
+
+* **Filamentous Non-Heterocystous Cyanobacteria** - Trichodesmium, Oscillatoria 6505
+
+* **Unicellular Cyanobacteria** - Cyanothece 51142, Cyanothece 8801, Crocasphaera WH8501
+
+* **Anaerobic Cyanobacteria** - Cyanothece 7424, Cyanothece 7425
+
+* **Other Diazotrophic Bacteria (Heterotrophic)**  - Frankia alni, Gluconacetobacter diazotrophicus, Azotobacter chroocum, Kleibseilla pneumoniae, Pseudomonas aeruginosa
+
+* **All Diazotrophic Cyanobacteria**  - Synechocystis sp. PCC 6803, Synechococcus 7942, Synechococcus WH8102, Synechococcus elongatus 2973, Arthrospira platensis, Nostoc sp. PCC 7120, Nostoc Punctiforme 29133, Leptolyngbya boryana, Trichodesmium, Oscillatoria 6505, Cyanothece 51142, Cyanothece 8801, Crocasphaera WH8501, Cyanothece 7424, Cyanothece 7425
+
+* **Filamentous Cyanobacteria** - Nostoc sp. PCC 7120, Nostoc Punctiforme 29133, Leptolyngbya boryana, Trichodesmium, Oscillatoria 6505
+
+
+### Proteomes, Analysis, and Reproducible Code
+
+The proteomes were downloaded from UniProt, BLAST+ analysis was carried out on the SDSU HPC, and the reproducible code will be available on github.
+
+
+
+
+
+
+
+
+
+
